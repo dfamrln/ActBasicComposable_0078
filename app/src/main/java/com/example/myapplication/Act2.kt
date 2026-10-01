@@ -125,7 +125,7 @@ fun TataLetakRowColumn(modifier: Modifier) {
 
 @Composable
 fun TataLetakBoxColumnRow(modifier: Modifier) {
-    val gambar = painterResource(id = R.drawable.notasibalok)
+    val gambar = painterResource(id = R.drawable.logo_umy)
     Column {
         Box(
             modifier = modifier
