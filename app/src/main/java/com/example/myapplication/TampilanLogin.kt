@@ -30,7 +30,7 @@ fun TampilanLogin(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize()
     ) {
         Image(
-            painter = painterResource(id = R.drawable.background_umy),
+            painter = painterResource(id = R.drawable.kampus_umy),
             contentDescription = "Background",
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
@@ -93,7 +93,7 @@ fun TampilanLogin(modifier: Modifier = Modifier) {
             )
 
             Text(
-                text = "20240240078",
+                text = "20240140078",
                 fontSize = 22.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.White
