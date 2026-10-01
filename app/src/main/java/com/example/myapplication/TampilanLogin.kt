@@ -14,6 +14,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.size
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 
 @Composable
 fun TampilanLogin(modifier: Modifier = Modifier) {
@@ -35,5 +39,6 @@ fun TampilanLogin(modifier: Modifier = Modifier) {
             fontSize = 14.sp,
             color = Color.White
         )
+        Spacer(modifier = Modifier.height(35.dp))
     }
 }
