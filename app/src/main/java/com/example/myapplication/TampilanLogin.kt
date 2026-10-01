@@ -40,5 +40,11 @@ fun TampilanLogin(modifier: Modifier = Modifier) {
             color = Color.White
         )
         Spacer(modifier = Modifier.height(35.dp))
+        Image(
+            painter = painterResource(id = R.drawable.logo_umy),
+            contentDescription = "Logo UMY",
+            modifier = Modifier.size(110.dp),
+            contentScale = ContentScale.Crop
+        )
     }
 }
