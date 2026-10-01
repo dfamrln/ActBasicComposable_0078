@@ -25,7 +25,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun TampilanLogin(modifier: Modifier = Modifier) {
+fun TugasLogin(modifier: Modifier = Modifier) {
     Box(
         modifier = modifier.fillMaxSize()
     ) {
