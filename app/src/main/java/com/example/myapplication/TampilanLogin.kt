@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.matchParentSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
@@ -33,7 +32,7 @@ fun TampilanLogin(modifier: Modifier = Modifier) {
         Image(
             painter = painterResource(id = R.drawable.background_umy),
             contentDescription = "Background",
-            modifier = Modifier.matchParentSize(),
+            modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
         )
 
@@ -103,17 +102,16 @@ fun TampilanLogin(modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.height(35.dp))
 
             Image(
-                painter = painterResource(id = R.drawable.kampus_umy),
-                contentDescription = "Gambar kampus",
-                modifier = Modifier
-                    .size(280.dp)
-                    .clip(CircleShape)
-                    .border(
-                        width = 4.dp,
-                        color = Color.White,
-                        shape = CircleShape
-                    ),
+                painter = painterResource(id = R.drawable.background_umy),
+                contentDescription = "Background",
+                modifier = Modifier.fillMaxSize(),
                 contentScale = ContentScale.Crop
+            )
+
+            Box(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .background(Color.Black.copy(alpha = 0.30f))
             )
         }
     }
