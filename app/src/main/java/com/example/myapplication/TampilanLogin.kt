@@ -30,7 +30,7 @@ fun TampilanLogin(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize()
     ) {
         Image(
-            painter = painterResource(id = R.drawable.kampus_umy),
+            painter = painterResource(id = R.drawable.background_umy),
             contentDescription = "Background",
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
@@ -102,16 +102,17 @@ fun TampilanLogin(modifier: Modifier = Modifier) {
             Spacer(modifier = Modifier.height(35.dp))
 
             Image(
-                painter = painterResource(id = R.drawable.background_umy),
-                contentDescription = "Background",
-                modifier = Modifier.fillMaxSize(),
-                contentScale = ContentScale.Crop
-            )
-
-            Box(
+                painter = painterResource(id = R.drawable.kampus_umy),
+                contentDescription = "Gambar kampus",
                 modifier = Modifier
-                    .fillMaxSize()
-                    .background(Color.Black.copy(alpha = 0.30f))
+                    .size(270.dp)
+                    .clip(CircleShape)
+                    .border(
+                        width = 4.dp,
+                        color = Color.White,
+                        shape = CircleShape
+                    ),
+                contentScale = ContentScale.Crop
             )
         }
     }
